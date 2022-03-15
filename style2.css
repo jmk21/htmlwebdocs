@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+@font-face{
+  font-family: consolas, sans-serif;
+  src: url('CONSOLA.TTF');
+}
+html, body {
+  background: linear-gradient(to top right, dodgerblue, purple);
+  margin: 0 0 0 0;
+  z-index: -2;
+  overflow-x: hidden;
+}
+.bar {
+  margin: 0 0 0 0;
+  width: 23vw;
+  height: 10vh;
+  z-index: 1;
+}
+.bars {
+  margin: 0 0 0 0;
+  width: 17vw;
+  height: 10vh;
+}
+.bars:hover {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+.barss {
+  width: 17vw;
+  height: 10vh;
+  margin: 0 0 0 16.1%;
+  z-index: 2;
+}
+.bars:hover {
+  animation-name: fades;
+  animation-duration: 1s;
+}
+.barss:hover {
+  animation-name: fadess;
+  animation-duration: 1s;
+}
+.bar:hover {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+.topbar{
+  margin: 0 0 0 0;
+  background-color: white;
+  padding-right: auto;
+}
+.grad{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to top right, dodgerblue, purple);
+  margin: 0 0 0 0;
+  z-index: -1;
+}
+@keyframes fade {
+  0%,100%{
+    width: 23vw;
+    height: 10vh;
+  }
+  50%{
+    width: 25vw;
+    height: 10vh;
+  }
+}
+@keyframes fades {
+  0%,100%{
+    width: 17vw;
+    height: 10vh;
+  }
+  50%{
+  
+    width: 20vw;
+    height: 10vh;
+  }
+}
+@keyframes fadess {
+  0%,100%{
+    width: 17vw;
+    height: 10vh;
+    margin: 0 0 0 16.1%;
+  }
+  50%{
+
+    width: 20vw;
+    height: 10vh;
+    margin: 0 0 0 14.6%;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  align-content: stretch;
+  z-index: 1;
+}
+.item {
+  border-radius: 5px;
+  flex: 0 0 auto;
+  background-color: rgba(200,200,200,1);
+  margin: 2px;
+  width: 100%;
+  z-index: 10;
+}
+.h {
+  font-size: 20px;
+  font-family: 'Secular One', sans-serif;
+  text-align: left;
+  margin: 0;
+}
+p {
+  user-select: none;
+  font-size: 13px;
+  font-family: 'Overpass', sans-serif;
+  margin: 0;
+  text-align: left;
+}
+.code {
+  user-select: all;
+  font-size: 13px;
+  font-family: 'consolas', monospace;
+  margin: 0;
+  text-align: left;
+  background-color: beige;
+  border-radius: 5px;
+  color: firebrick;
+}
+.example {
+  background-color: white;
+  color: black;
+}
+.examplechild {
+  color: inherit;
+  background-color: inherit;
+}
+.code:hover{
+  animation-duration: 1s;
+  animation-name: ex;
+}
+.item:hover{
+  animation-duration: 1s;
+  animation-name: item;
+}
+@keyframes ex{
+  0%, 100%{
+    transform: rotateZ(0deg);
+    font-size: 13px;
+    padding: 0px;
+    background-color: beige;
+    color: brown;
+    border-radius: 5px;
+  }
+  50%{
+    letter-spacing: 0.1em;
+    font-size: 13px;
+    background: white;
+    color: black;
+    border-radius: 10px;
+  }
+}
+@keyframes item{
+  0%, 100%{
+    border-radius: 5px;
+    background-color: rgba(200,200,200,1);
+  }
+  50%{
+    border-radius: 10px;
+    background-color: rgba(170,170,170,1);
+  }
+}
+.psuedo {
+  background-color: white;
+  color: black;
+}
+.psuedo:hover{
+  background-color: red;
+}
+
