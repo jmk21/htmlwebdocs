@@ -1,6 +1,6 @@
 @font-face{
   font-family: consolas, sans-serif;
-  src: url('CONSOLA.ttf');
+  src: url('CONSOLA.TTF');
 }
 html, body {
   background: linear-gradient(to top right, dodgerblue, purple);
