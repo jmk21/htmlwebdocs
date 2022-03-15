@@ -1,0 +1,10 @@
+@font-face{
+  font-family: consolas, sans-serif;
+  src: url('font.otf');
+}
+html, body {
+  background: linear-gradient(to top right, dodgerblue, purple);
+  margin: 0 0 0 0;
+  z-index: -2;
+  overflow-x: hidden;
+}
